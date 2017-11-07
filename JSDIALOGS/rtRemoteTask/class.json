@@ -1,0 +1,73 @@
+{
+	"classtype": "kRemoteTask",
+	"internalversion": 3,
+	"nextident": 1,
+	"tvardefs": [
+		{
+			"name": "tJSFileBinData",
+			"order": 1,
+			"type": "kBinary",
+			"subtype": 0,
+			"sublen": 100000000
+		},
+		{
+			"name": "tJSFileBinData2",
+			"order": 2,
+			"type": "kBinary",
+			"subtype": 0,
+			"sublen": 100000000
+		},
+		{
+			"name": "tJSFileBinData3",
+			"order": 3,
+			"type": "kBinary",
+			"subtype": 0,
+			"sublen": 100000000
+		},
+		{
+			"name": "tJSFileBinData4",
+			"order": 4,
+			"type": "kBinary",
+			"subtype": 0,
+			"sublen": 100000000
+		},
+		{
+			"name": "tJSFileBinData5",
+			"order": 5,
+			"type": "kBinary",
+			"subtype": 0,
+			"sublen": 100000000
+		}
+	],
+	"cvardefs": [
+
+	],
+	"ivardefs": [
+
+	],
+	"properties": {
+		"basehttpresponseheaders": "",
+		"collectperformancedata": false,
+		"componenticon": 0,
+		"componenttype": "kCompStoreHidden",
+		"createdate": "2017-11-07 15:33:57",
+		"desc": "",
+		"editor": "",
+		"editordata": "",
+		"external": true,
+		"issupercomponent": false,
+		"localtestdata": "",
+		"localtime": false,
+		"maxtime": 0,
+		"maxusers": 0,
+		"moddate": "2017-10-16 10:15:33",
+		"restful": false,
+		"restfulapiname": "",
+		"showascheckedout": false,
+		"stringtable": "",
+		"timeout": 0,
+		"userinfo": "",
+		"version": "1",
+		"webservice": ""
+	}
+}

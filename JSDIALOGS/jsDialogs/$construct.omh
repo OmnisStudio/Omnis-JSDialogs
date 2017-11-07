@@ -1,0 +1,4 @@
+;  Enter your initialization code here
+
+Calculate iTitle as 'Dialog Title'
+Calculate iMsg as 'My Message'

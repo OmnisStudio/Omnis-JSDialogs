@@ -1,0 +1,20 @@
+Switch iDialogType
+	Case 0     ;; OK Message
+		Do lDialogRow.$define(lMsg,lTitle,lOk,lCancel)
+		If iCancel
+			Do lDialogRow.$assigncols(iMsg,iTitle,'$clientCmdOK','$clientCmdCancel')
+		Else
+			Do lDialogRow.$assigncols(iMsg,iTitle,'$clientCmdOK','')
+		End If
+		Calculate lCommand as 'okcancelmessage'
+	Case 1,2     ;; Yes/No or No/Yes
+		Do lDialogRow.$define(lMsg,lTitle,lYes,lNo,lCancel)
+		If iCancel
+			Do lDialogRow.$assigncols(iMsg,iTitle,'$clientCmdYes','$clientCmdNo','$clientCmdCancel')
+		Else
+			Do lDialogRow.$assigncols(iMsg,iTitle,'$clientCmdYes','$clientCmdNo','')
+		End If
+		Calculate lCommand as pick(iDialogType=1,'noyesmessage','yesnomessage')
+End Switch
+
+Do $cinst.$clientcommand(lCommand,lDialogRow)
